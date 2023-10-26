@@ -79,7 +79,7 @@ $ java -jar Tulkun.jar bs <network name> --show_result
 Fill the network name in the corresponding location to run the burst update simulation and it will output the results later.
 
 
-- Operational networks can be viewed in the `config` directory, or run `$ java jar Tunkun.jar list`  to view all operational networks.
+- The optional `<network name>` can be viewed in the `config` directory, or run `$ java jar Tunkun.jar list`  to view all operational networks.
 - The number of runs can be set by the `-t` parameter to obtain stable evaluation results.
 - The other parameters can be showed by using the `-h` parameter.
 
@@ -93,7 +93,7 @@ $ java -jar Tulkun.jar is <network name> --show_result
 Fill the network name in the corresponding location to run the incremental update simulation and it will output the results later.
 
 
-- Operational networks can be viewed in the `config` directory, or run `$ java -jar Tunkun.jar list`  to view all operational networks.
+- The optional `<network name>` can be viewed in the `config` directory, or run `$ java -jar Tunkun.jar list`  to view all operational networks.
 - The maximum number of incremental updates can be set with the `-t` parameter.
 - The other parameters can be showed by using the `-h` parameter.
 

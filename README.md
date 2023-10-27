@@ -61,13 +61,26 @@ The network name parameter that can be used is any directory name under the dire
 
 Tulkun was used in a distributed network environment. This project provides a simulation to run distributed verification on a single machine and get the verification time.
 
-it required and recommended:
+It just required:
 
 - JDK 8
-- Configure the necessary environment through the `pom.xml` file.
-- Run the main class, located at:`src/main/java/Main.java`, it can also be run directly with the jar in latest [release](https://github.com/sngroup-xmu/ddpv-public/releases/tag/v1.0.0).
-- Run the program in terminal, you can use the parameter `-h` to see all the available parameters.
+
+### Build
+
+We recommend using Maven for fast build project. It needs `Maven >= 3.9.0`
+
+If you do not have Maven, click [here](https://maven.apache.org/download.cgi) to download the latest version of Maven.
+
+
+```shell script
+$ mvn package
+```
+After this step, we can get `Tulkun.jar` file in the current directory.
+
+- Run Tulkun in terminal, you can use the parameter `-h` to see all the available parameters.
 - Whichever method you run with, make sure that you have a `config` directory in the runtime directory and that you have generated the DPVNet from *Evaluation Datasets* .
+
+It can also be run directly with the jar in latest [release](https://github.com/sngroup-xmu/ddpv-public/releases/latest).
 
 ### Burst Update
 
@@ -79,7 +92,7 @@ $ java -jar Tulkun.jar bs <network name> --show_result
 Fill the network name in the corresponding location to run the burst update simulation and it will output the results later.
 
 
-- The optional `<network name>` can be viewed in the `config` directory, or run `$ java jar Tunkun.jar list`  to view all operational networks.
+- The optional `<network name>` can be viewed in the `config` directory, or run `$ java -jar Tulkun.jar list`  to view all operational networks.
 - The number of runs can be set by the `-t` parameter to obtain stable evaluation results.
 - The other parameters can be showed by using the `-h` parameter.
 
@@ -93,7 +106,7 @@ $ java -jar Tulkun.jar is <network name> --show_result
 Fill the network name in the corresponding location to run the incremental update simulation and it will output the results later.
 
 
-- The optional `<network name>` can be viewed in the `config` directory, or run `$ java -jar Tunkun.jar list`  to view all operational networks.
+- The optional `<network name>` can be viewed in the `config` directory, or run `$ java -jar Tulkun.jar list`  to view all operational networks.
 - The maximum number of incremental updates can be set with the `-t` parameter.
 - The other parameters can be showed by using the `-h` parameter.
 

@@ -281,6 +281,7 @@ public class Configuration {
                 configuration.setIncrementalSequenceFile(incrementalSequenceFile.getAbsolutePath());
             }
             Configuration configuration = Configuration.getConfiguration();
+
             if(topologyFile.isFile() && spaceFile.isFile() && DVNetFile.isFile() && ruleFile.isDirectory()){
                 configuration.setTopologyFile(topologyFile.getAbsolutePath());
                 configuration.setSpaceFile(spaceFile.getAbsolutePath());

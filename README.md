@@ -45,12 +45,12 @@ After running, planner generates the corresponding puml file in the `\config\dem
 
 ### Evaluation Dateset
 
-Running the `planner_test.py` file in the `.\scripts\` directory with parameters for the network name,  it automatically generates a DPVNet for all the pairs reachability required for evaluation.
+Running the `gen_DPVNet.py` file in the `.\scripts\` directory with parameters for the network name,  it automatically generates a DPVNet for all the pairs reachability required for evaluation.
 
 e.g.
 ```shell
 $ cd scripts
-$ python planner_test.py i2
+$ python gen_DPVNet.py i2
 ```
 
 The `DPVNet.puml` file is generated under `.\config\i2` when after running. This file does not need to be renamed because the verifier automatically uses the file with this name for verification tasks when it starts.
